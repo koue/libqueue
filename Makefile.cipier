@@ -1,0 +1,18 @@
+PORTNAME=	libqueue
+PORTVERSION=	1.0
+CATEGORIES=	devel
+
+MAINTAINER=	koue@chaosophia.net
+COMMENT=	queue
+
+LICENSE=	BSD2CLAUSE
+
+USE_GITHUB=	yes
+GH_ACCOUNT=	koue
+GH_PROJECT=	libqueue
+
+CFLAGS+=	-Wall
+
+MAKE_ARGS+=	BINDIR=${PREFIX}/sbin MANDIR=${PREFIX}/man/man
+
+.include <bsd.port.mk>
